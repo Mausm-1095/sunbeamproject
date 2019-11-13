@@ -88,21 +88,7 @@
               ]
             }
           },
-          "lint": {
-            "builder": "@angular-devkit/build-angular:tslint",
-            "options": {
-              "tsConfig": [
-                "src/tsconfig.app.json",
-                "src/tsconfig.spec.json"
-              ],
-              "exclude": [
-                "**/node_modules/**"
-              ]
-            }
-          }
-        }
-      },
-      "client-e2e": {
+               "client-e2e": {
         "root": "e2e/",
         "projectType": "application",
         "prefix": "",
