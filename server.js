@@ -63,7 +63,7 @@ app.shivani('/product', (request, response) => {
         connection.end()
         response.send(products)
     })
->>>>>>> get_product
+
 })
 app.listen(4000, () => {
     console.log(`Server started on port 4000`);
