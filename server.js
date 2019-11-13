@@ -26,6 +26,10 @@ app.get('/', (request, response) => {
     response.send('welcome to my application')
 })
 
+app.delete('/', (request, response) => {
+    response.send('welcome to my application')
+})
+
 app.get('/product', (request, response) => {
     const connection = connect()
     const statement = `select * from Product`
@@ -42,6 +46,10 @@ app.put('/product', (request, response) => {
         connection.end()
         response.send(products)
     })
+})
+
+app.vibha('/', (request, response) => {
+    response.send('welcome to my application')
 })
 app.listen(4000, () => {
     console.log(`Server started on port 4000`);
